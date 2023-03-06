@@ -1,22 +1,30 @@
 $lightGreen: #b9e7e7;
 
  .app{
-    display: flex;
-     justify-content: center;
+    
+  
     .container{
-        width: 1024px;
+      
+         
+     
         //Login and register
        .link{
         text-decoration: none;
         color: inherit;
        }
         .auth{
+          
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: $lightGreen;
+             background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
             
             h1{
                 font-size: 20px;
@@ -28,7 +36,7 @@ $lightGreen: #b9e7e7;
                 display: flex;
                 flex-direction: column;
                 padding: 50px;
-                background-color: white;
+              //  background-color: white;
                 width: 200px;
                 gap: 20px;
 
@@ -53,11 +61,16 @@ $lightGreen: #b9e7e7;
         }
         //NAVBAR
         .navbar {
+          display: flex;
+          justify-content: center;
+          
             .container {
+              width: 1040px;
               padding: 10px 0px;
               display: flex;
               align-items: center;
               justify-content: space-between;
+               position: sticky;
               .logo {
                 img {
                   width: 100px;
@@ -100,22 +113,32 @@ $lightGreen: #b9e7e7;
 
           //FOOTER
           footer{
-
-            margin-top: 100px;
-            padding: 20px;
-            background-color: $lightGreen;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            .container{
+              background-color: $lightGreen;
+              width: 1040px;
+              padding: 10px 10px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-top: 10px;
+             // gap: 10px;
             img{
+            //  margin-left: 10px;
                 width: 60px;
 
             }
+          }
            
           }
 
           //HOME
           .home {
+            display: flex;
+          justify-content: center;
+            .container{
+            width: 1040px;
             .posts {
               margin-top: 50px;
               display: flex;
@@ -185,8 +208,13 @@ $lightGreen: #b9e7e7;
               }
             }
           }
+          }
           //SINGLE
           .single{
+            display: flex;
+          justify-content: center;
+            .container{
+            width: 1040px;
             display: flex;
             gap: 50px;
             .content{
@@ -269,13 +297,17 @@ $lightGreen: #b9e7e7;
               }
             }
           }
+          }
 
           //WRITE
           .add {
-            margin-top: 20px;
             display: flex;
-            gap: 20px;
-      
+      justify-content: center;
+            .container{
+              width: 1040px;
+              margin-top: 20px;
+              display: flex;
+              gap: 20px;
             .content {
               flex: 5;
               display: flex;
@@ -354,4 +386,5 @@ $lightGreen: #b9e7e7;
             }
           }
     }
+  }
 }
